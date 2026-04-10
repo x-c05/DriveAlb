@@ -51,7 +51,7 @@ Department of Computer Engineering
 
 ## Technology Stack (Expected)
 
-- **Frontend:** React.js  
+- **Frontend:** HTML5, CSS3, JavaScript 
 - **Backend:** Node.js  
 - **Database:** MySQL 9.0  
 - **Object Storage:** MinIO  
