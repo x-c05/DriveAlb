@@ -39,7 +39,7 @@ This project documentation covers:
 - Samuel Troci
 - Klidi Domi 
 - Mirel Islamaj 
-- Nensi Hazizaj
+
 
 ## Supervision
 
