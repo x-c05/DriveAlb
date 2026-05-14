@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Login | DriveAlb</title>
+
+  <meta
+    name="description"
+    content="Login to DriveAlb to access client, seller, staff, or admin features."
+  />
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body class="auth">
+  <main class="auth-card">
+    <a class="logo" href="../index.html">
+      Drive<span>Alb</span>
+    </a>
+
+    <h1>Welcome Back</h1>
+
+    <p>
+      Login to access your DriveAlb account and continue managing your activity.
+    </p>
+
+    <form id="loginForm">
+      <label for="email">Email Address</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password"
+        required
+      />
+
+      <div class="auth-options">
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Remember me</span>
+        </label>
+
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button class="btn full" type="submit">
+        Login
+      </button>
+
+      <p id="authMessage" class="message"></p>
+    </form>
+
+    <div class="demo-box">
+      <h3>Demo Accounts</h3>
+      <p><strong>Client:</strong> client@drivealb.com / client123</p>
+      <p><strong>Seller:</strong> seller@drivealb.com / seller123</p>
+      <p><strong>Staff:</strong> staff@drivealb.com / staff123</p>
+      <p><strong>Admin:</strong> admin@drivealb.com / admin123</p>
+    </div>
+
+    <p class="auth-bottom-text">
+      Don't have an account?
+      <a href="register.html">Create one</a>
+    </p>
+
+    <p class="auth-bottom-text">
+      <a href="../index.html">← Back to Home</a>
+    </p>
+  </main>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

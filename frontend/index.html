@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DriveAlb | Online Car Marketplace Platform</title>
+
+  <meta
+    name="description"
+    content="DriveAlb is an online car marketplace platform where clients can explore, buy, rent, and send inquiries for vehicles while sellers manage listings and promotions."
+  />
+
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <!-- ===============================
+       NAVBAR
+       =============================== -->
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      Drive<span>Alb</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pages/listings.html">Vehicles</a>
+      <a href="pages/seller-dashboard.html">Sellers</a>
+      <a href="pages/admin-dashboard.html">Staff/Admin</a>
+      <a href="pages/login.html">Login</a>
+      <a class="btn small" href="pages/register.html">Register</a>
+    </nav>
+  </header>
+
+  <!-- ===============================
+       MAIN CONTENT
+       =============================== -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="tag">Online Car Marketplace Platform</p>
+
+        <h1>Buy, sell, and rent vehicles through DriveAlb.</h1>
+
+        <p>
+          DriveAlb is a modern vehicle marketplace designed for clients,
+          sellers, staff, and administrators. Clients can explore available
+          vehicles, apply filters, rent cars, or send inquiries. Sellers can
+          publish listings, manage promotions, and monitor their earnings.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn" href="pages/listings.html">Explore Vehicles</a>
+          <a class="btn btn-outline light-outline" href="pages/register.html">
+            Create Account
+          </a>
+        </div>
+      </div>
+
+      <!-- QUICK SEARCH CARD -->
+      <div class="search-card">
+        <h2>Find a Vehicle</h2>
+        <p>Search by brand, model, city, or listing type.</p>
+
+        <label for="homeSearch">Keyword</label>
+        <input
+          id="homeSearch"
+          type="text"
+          placeholder="Example: BMW, Golf, Tirana..."
+        />
+
+        <label for="homeStatus">Listing Type</label>
+        <select id="homeStatus">
+          <option value="">All Listings</option>
+          <option value="Sale">For Sale</option>
+          <option value="Rent">For Rent</option>
+        </select>
+
+        <button class="btn full" onclick="goToSearch()">
+          Search Vehicles
+        </button>
+      </div>
+    </section>
+
+    <!-- FEATURED LISTINGS -->
+    <section class="section">
+      <div class="section-title">
+        <div>
+          <p class="tag dark-tag">Featured Listings</p>
+          <h2>Promoted vehicles on DriveAlb</h2>
+        </div>
+
+        <a href="pages/listings.html">View all vehicles →</a>
+      </div>
+
+      <div id="featuredCars" class="car-grid">
+        <!-- Featured cars are loaded from js/main.js -->
+      </div>
+    </section>
+
+    <!-- PLATFORM ROLES -->
+    <section class="section light-section">
+      <div class="section-title centered">
+        <div>
+          <p class="tag dark-tag">Platform Roles</p>
+          <h2>Designed for every user type</h2>
+        </div>
+      </div>
+
+      <div class="roles-grid">
+        <article class="role-card">
+          <h3>Clients</h3>
+          <p>
+            Clients can explore available vehicles, apply filters, view vehicle
+            details, rent cars, or send inquiries to sellers.
+          </p>
+        </article>
+
+        <article class="role-card">
+          <h3>Sellers</h3>
+          <p>
+            Sellers can publish listings for selling or renting vehicles, manage
+            promotional offers, and monitor their earnings.
+          </p>
+        </article>
+
+        <article class="role-card">
+          <h3>Staff</h3>
+          <p>
+            Staff members validate car listings, maintain brand data, and
+            oversee platform activities to keep listings reliable.
+          </p>
+        </article>
+
+        <article class="role-card">
+          <h3>Admin</h3>
+          <p>
+            Admins have full authority over the system, including staff
+            management, user control, and global platform configurations.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="section-title centered">
+        <div>
+          <p class="tag dark-tag">System Flow</p>
+          <h2>How DriveAlb works</h2>
+        </div>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <span>01</span>
+          <h3>Explore vehicles</h3>
+          <p>
+            Users browse vehicle listings and view the most important
+            information such as brand, model, year, fuel type, city, and price.
+          </p>
+        </article>
+
+        <article class="step-card">
+          <span>02</span>
+          <h3>Apply filters</h3>
+          <p>
+            Clients filter cars by listing type, brand, vehicle category, city,
+            or other important vehicle information.
+          </p>
+        </article>
+
+        <article class="step-card">
+          <span>03</span>
+          <h3>Send inquiry or rent</h3>
+          <p>
+            Interested clients can contact sellers or send a rental request for
+            vehicles that are available for rent.
+          </p>
+        </article>
+
+        <article class="step-card">
+          <span>04</span>
+          <h3>Manage platform</h3>
+          <p>
+            Sellers, staff, and admins manage listings, promotions, approvals,
+            users, staff accounts, and system settings.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURE HIGHLIGHTS -->
+    <section class="section light-section">
+      <div class="section-title centered">
+        <div>
+          <p class="tag dark-tag">Key Features</p>
+          <h2>Main functionalities</h2>
+        </div>
+      </div>
+
+      <div class="roles-grid">
+        <article class="role-card">
+          <h3>Vehicle Listings</h3>
+          <p>
+            Cars can be listed for sale or rent with details such as brand,
+            model, year, mileage, engine, fuel type, city, and price.
+          </p>
+        </article>
+
+        <article class="role-card">
+          <h3>Search & Filters</h3>
+          <p>
+            Users can search by keyword and filter vehicles to quickly find the
+            listings that match their needs.
+          </p>
+        </article>
+
+        <article class="role-card">
+          <h3>Listing Validation</h3>
+          <p>
+            Staff can review vehicle listings before they appear publicly,
+            helping the platform remain trustworthy.
+          </p>
+        </article>
+
+        <article class="role-card">
+          <h3>Role-Based Access</h3>
+          <p>
+            The system separates access for clients, sellers, staff, and admins
+            based on their responsibilities.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats">
+      <div>
+        <strong id="totalListings">120+</strong>
+        <span>Total Listings</span>
+      </div>
+
+      <div>
+        <strong id="sellerCount">40+</strong>
+        <span>Verified Sellers</span>
+      </div>
+
+      <div>
+        <strong id="cityCount">70+</strong>
+        <span>Supported Cities</span>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Start using DriveAlb today</h2>
+
+      <p>
+        Browse available vehicles, create a seller account, or access the
+        dashboard to manage listings and platform activities.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn" href="pages/listings.html">Browse Vehicles</a>
+        <a class="btn btn-outline light-outline" href="pages/register.html">
+          Join DriveAlb
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===============================
+       FOOTER
+       =============================== -->
+  <footer>
+    <div class="footer-content">
+      <a class="logo" href="index.html">
+        Drive<span>Alb</span>
+      </a>
+
+      <p>
+        DriveAlb is a semester project web platform for buying, selling, and
+        renting vehicles through a structured digital marketplace.
+      </p>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="pages/listings.html">Vehicles</a>
+        <a href="pages/login.html">Login</a>
+        <a href="pages/register.html">Register</a>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © 2026 DriveAlb. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

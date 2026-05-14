@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Staff & Admin Dashboard | DriveAlb</title>
+
+  <meta
+    name="description"
+    content="DriveAlb staff and admin dashboard for validating listings, managing users, maintaining brands, managing staff, and controlling platform settings."
+  />
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a class="logo" href="../index.html">
+      Drive<span>Alb</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="listings.html">Vehicles</a>
+      <a href="seller-dashboard.html">Sellers</a>
+      <a href="admin-dashboard.html">Staff/Admin</a>
+      <a href="login.html">Login</a>
+      <a class="btn small" href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="page">
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div>
+        <p class="tag dark-tag">Platform Management</p>
+        <h1>Staff & Admin Dashboard</h1>
+        <p>
+          Staff members can validate vehicle listings, manage brand data, and
+          monitor platform activity. Admins have full control over users, staff,
+          and global platform settings.
+        </p>
+      </div>
+
+      <a class="btn" href="listings.html">
+        View Public Listings
+      </a>
+    </section>
+
+    <!-- DASHBOARD STATS -->
+    <section class="dashboard-grid">
+      <article class="dashboard-card">
+        <h3>Pending Listings</h3>
+        <strong>12</strong>
+        <p>Listings waiting for staff validation.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <h3>Active Users</h3>
+        <strong>240</strong>
+        <p>Registered clients, sellers, staff, and admins.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <h3>Vehicle Brands</h3>
+        <strong>36</strong>
+        <p>Brands maintained by the staff team.</p>
+      </article>
+    </section>
+
+    <!-- LISTING VALIDATION -->
+    <section class="panel">
+      <div class="section-title">
+        <div>
+          <p class="tag dark-tag">Staff Function</p>
+          <h2>Listing Validation Queue</h2>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Vehicle</th>
+            <th>Seller</th>
+            <th>City</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Staff Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Toyota Corolla</td>
+            <td>Auto Tirana</td>
+            <td>Elbasan</td>
+            <td>Sale</td>
+            <td>Pending Review</td>
+            <td>
+              <button class="btn btn-small" type="button">Approve</button>
+              <button class="btn btn-outline btn-small" type="button">Reject</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Ford Focus</td>
+            <td>Private Seller</td>
+            <td>Shkoder</td>
+            <td>Sale</td>
+            <td>Pending Review</td>
+            <td>
+              <button class="btn btn-small" type="button">Approve</button>
+              <button class="btn btn-outline btn-small" type="button">Reject</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Range Rover Evoque</td>
+            <td>Premium Rentals Albania</td>
+            <td>Tirana</td>
+            <td>Rent</td>
+            <td>Pending Review</td>
+            <td>
+              <button class="btn btn-small" type="button">Approve</button>
+              <button class="btn btn-outline btn-small" type="button">Reject</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- BRAND MANAGEMENT -->
+    <section class="panel">
+      <div class="section-title">
+        <div>
+          <p class="tag dark-tag">Staff Function</p>
+          <h2>Brand Management</h2>
+        </div>
+      </div>
+
+      <div class="admin-two-column">
+        <div>
+          <h3>Add New Brand</h3>
+          <p>
+            Staff can maintain vehicle brand data so listings remain organized
+            and searchable.
+          </p>
+
+          <form class="admin-form">
+            <input type="text" placeholder="Brand name" />
+            <input type="text" placeholder="Country / Origin" />
+
+            <select>
+              <option value="">Brand Status</option>
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+
+            <button class="btn" type="button">
+              Add Brand
+            </button>
+          </form>
+        </div>
+
+        <div>
+          <h3>Existing Brands</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Status</th>
+                <th>Listings</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>BMW</td>
+                <td>Active</td>
+                <td>18</td>
+              </tr>
+
+              <tr>
+                <td>Mercedes-Benz</td>
+                <td>Active</td>
+                <td>22</td>
+              </tr>
+
+              <tr>
+                <td>Toyota</td>
+                <td>Active</td>
+                <td>14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- USERS AND STAFF MANAGEMENT -->
+    <section class="dashboard-grid">
+      <article class="panel">
+        <h2>User Management</h2>
+        <p>
+          Admins can review user accounts and manage access for clients and
+          sellers.
+        </p>
+
+        <div class="admin-action-box">
+          <p><strong>Clients:</strong> 160</p>
+          <p><strong>Sellers:</strong> 68</p>
+          <p><strong>Suspended:</strong> 4</p>
+
+          <button class="btn full" type="button">
+            Manage Users
+          </button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Staff Management</h2>
+        <p>
+          Admins can create, edit, or remove staff accounts responsible for
+          platform moderation.
+        </p>
+
+        <div class="admin-action-box">
+          <p><strong>Staff Members:</strong> 8</p>
+          <p><strong>Active:</strong> 7</p>
+          <p><strong>Inactive:</strong> 1</p>
+
+          <button class="btn full" type="button">
+            Manage Staff
+          </button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Platform Settings</h2>
+        <p>
+          Admins can control global settings, listing rules, and platform
+          configurations.
+        </p>
+
+        <div class="admin-action-box">
+          <p><strong>Listing Approval:</strong> Enabled</p>
+          <p><strong>Promotions:</strong> Enabled</p>
+          <p><strong>Rentals:</strong> Enabled</p>
+
+          <button class="btn full" type="button">
+            Open Settings
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <!-- PLATFORM ACTIVITY -->
+    <section class="panel">
+      <div class="section-title">
+        <div>
+          <p class="tag dark-tag">Monitoring</p>
+          <h2>Recent Platform Activity</h2>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>User</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>New listing submitted</td>
+            <td>Auto Tirana</td>
+            <td>Seller</td>
+            <td>Pending Review</td>
+            <td>10 minutes ago</td>
+          </tr>
+
+          <tr>
+            <td>Listing approved</td>
+            <td>Staff Member</td>
+            <td>Staff</td>
+            <td>Completed</td>
+            <td>1 hour ago</td>
+          </tr>
+
+          <tr>
+            <td>New user registered</td>
+            <td>client@drivealb.com</td>
+            <td>Client</td>
+            <td>Active</td>
+            <td>2 hours ago</td>
+          </tr>
+
+          <tr>
+            <td>Promotion activated</td>
+            <td>Premium Rentals Albania</td>
+            <td>Seller</td>
+            <td>Active</td>
+            <td>Yesterday</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <a class="logo" href="../index.html">
+        Drive<span>Alb</span>
+      </a>
+
+      <p>
+        DriveAlb staff and admins maintain listing quality, user access, brand
+        data, and global platform configuration.
+      </p>
+
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="listings.html">Vehicles</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © 2026 DriveAlb. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>

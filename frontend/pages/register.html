@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Register | DriveAlb</title>
+
+  <meta
+    name="description"
+    content="Create a DriveAlb account as a client or seller to explore, rent, sell, or manage vehicles."
+  />
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body class="auth">
+  <main class="auth-card">
+    <a class="logo" href="../index.html">
+      Drive<span>Alb</span>
+    </a>
+
+    <h1>Create Account</h1>
+
+    <p>
+      Join DriveAlb to explore vehicles, send inquiries, rent cars, or publish
+      your own listings.
+    </p>
+
+    <form id="registerForm">
+      <label for="name">Full Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <label for="email">Email Address</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Create a password"
+        required
+      />
+
+      <label for="role">Account Type</label>
+      <select id="role" required>
+        <option value="client">Client</option>
+        <option value="seller">Seller</option>
+      </select>
+
+      <button class="btn full" type="submit">
+        Register
+      </button>
+
+      <p id="authMessage" class="message"></p>
+    </form>
+
+    <div class="demo-box">
+      <h3>Account Types</h3>
+      <p>
+        <strong>Client:</strong> Explore vehicles, apply filters, rent cars, and
+        send inquiries.
+      </p>
+      <p>
+        <strong>Seller:</strong> Publish vehicle listings, manage offers, and
+        monitor earnings.
+      </p>
+    </div>
+
+    <p class="auth-bottom-text">
+      Already have an account?
+      <a href="login.html">Login here</a>
+    </p>
+
+    <p class="auth-bottom-text">
+      <a href="../index.html">← Back to Home</a>
+    </p>
+  </main>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

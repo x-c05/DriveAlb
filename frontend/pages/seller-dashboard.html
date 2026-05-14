@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Seller Dashboard | DriveAlb</title>
+
+  <meta
+    name="description"
+    content="Seller dashboard for DriveAlb, where sellers can publish listings, manage offers, and monitor earnings."
+  />
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a class="logo" href="../index.html">
+      Drive<span>Alb</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="listings.html">Vehicles</a>
+      <a href="seller-dashboard.html">Sellers</a>
+      <a href="admin-dashboard.html">Staff/Admin</a>
+      <a href="login.html">Login</a>
+      <a class="btn small" href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="page">
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div>
+        <p class="tag dark-tag">Seller Workspace</p>
+        <h1>Seller Dashboard</h1>
+        <p>
+          Publish vehicle listings, manage promotional offers, track inquiries,
+          and monitor your earnings from one place.
+        </p>
+      </div>
+
+      <a class="btn" href="listings.html">
+        View Public Listings
+      </a>
+    </section>
+
+    <!-- SELLER STATS -->
+    <section class="dashboard-grid">
+      <article class="dashboard-card">
+        <h3>Active Listings</h3>
+        <strong>8</strong>
+        <p>Vehicles currently visible to clients.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <h3>Pending Review</h3>
+        <strong>2</strong>
+        <p>Listings waiting for staff validation.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <h3>Total Earnings</h3>
+        <strong>€12,400</strong>
+        <p>Estimated revenue from sales and rentals.</p>
+      </article>
+    </section>
+
+    <!-- CREATE LISTING -->
+    <section class="panel">
+      <div class="section-title">
+        <div>
+          <p class="tag dark-tag">Vehicle Management</p>
+          <h2>Publish New Listing</h2>
+        </div>
+      </div>
+
+      <form class="form-grid">
+        <input type="text" placeholder="Brand" />
+        <input type="text" placeholder="Model" />
+        <input type="number" placeholder="Year" />
+
+        <input type="number" placeholder="Price" />
+
+        <select>
+          <option value="">Listing Type</option>
+          <option value="Sale">For Sale</option>
+          <option value="Rent">For Rent</option>
+        </select>
+
+        <select>
+          <option value="">Vehicle Type</option>
+          <option value="SUV">SUV</option>
+          <option value="Sedan">Sedan</option>
+          <option value="Hatchback">Hatchback</option>
+          <option value="Coupe">Coupe</option>
+          <option value="Van">Van</option>
+        </select>
+
+        <select>
+          <option value="">Fuel Type</option>
+          <option value="Diesel">Diesel</option>
+          <option value="Petrol">Petrol</option>
+          <option value="Hybrid">Hybrid</option>
+          <option value="Electric">Electric</option>
+        </select>
+
+        <select>
+          <option value="">Transmission</option>
+          <option value="Manual">Manual</option>
+          <option value="Automatic">Automatic</option>
+        </select>
+
+        <input type="text" placeholder="City" />
+
+        <textarea placeholder="Vehicle description"></textarea>
+
+        <button class="btn" type="button">
+          Submit for Review
+        </button>
+      </form>
+    </section>
+
+    <!-- LISTING MANAGEMENT -->
+    <section class="panel">
+      <div class="section-title">
+        <div>
+          <p class="tag dark-tag">Listings</p>
+          <h2>My Listings</h2>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Vehicle</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Promotion</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>BMW X5</td>
+            <td>Sale</td>
+            <td>€42,000</td>
+            <td>Published</td>
+            <td>Active</td>
+            <td>
+              <button class="btn btn-small">Edit</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Mercedes-Benz C-Class</td>
+            <td>Rent</td>
+            <td>€120/day</td>
+            <td>Published</td>
+            <td>Active</td>
+            <td>
+              <button class="btn btn-small">Edit</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Toyota Corolla</td>
+            <td>Sale</td>
+            <td>€26,000</td>
+            <td>Pending Review</td>
+            <td>Inactive</td>
+            <td>
+              <button class="btn btn-small">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PROMOTIONS AND EARNINGS -->
+    <section class="dashboard-grid">
+      <article class="panel">
+        <h2>Promotional Offers</h2>
+        <p>
+          Manage promoted listings to increase visibility for selected vehicles.
+        </p>
+
+        <div class="seller-action-box">
+          <p><strong>Active promotions:</strong> 3</p>
+          <p><strong>Expired promotions:</strong> 1</p>
+          <button class="btn full" type="button">
+            Manage Promotions
+          </button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Inquiries</h2>
+        <p>
+          View client questions and rental requests related to your vehicles.
+        </p>
+
+        <div class="seller-action-box">
+          <p><strong>New inquiries:</strong> 5</p>
+          <p><strong>Rental requests:</strong> 2</p>
+          <button class="btn full" type="button">
+            View Inquiries
+          </button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Earnings</h2>
+        <p>
+          Monitor estimated revenue generated through vehicle sales and rentals.
+        </p>
+
+        <div class="seller-action-box">
+          <p><strong>This month:</strong> €3,200</p>
+          <p><strong>Total:</strong> €12,400</p>
+          <button class="btn full" type="button">
+            View Earnings
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <a class="logo" href="../index.html">
+        Drive<span>Alb</span>
+      </a>
+
+      <p>
+        DriveAlb allows sellers to publish vehicle listings, manage promotions,
+        and monitor marketplace activity.
+      </p>
+
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="listings.html">Vehicles</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © 2026 DriveAlb. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
